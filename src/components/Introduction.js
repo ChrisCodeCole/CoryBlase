@@ -10,13 +10,16 @@ class Introduction extends Component {
   }
   render() {
     const videoStyle = {
-      objectFit: "initial",
-      height: "25em",
-      width: "90%"
+      objectFit: "contain",
+      maxHeight: "50%",
+      width: "60%",
+      display: "block",
+      margin: "0 auto"
+      
     };
     
     return (
-      <div className="Introduction" style={{}}>
+      <div className="Introduction">
         {/*"loop autoPlay" attributes for video possible..*/}
         <video id="background-video" style={videoStyle} >
                 <source src={this.state.videoURL} type="video/mp4" />

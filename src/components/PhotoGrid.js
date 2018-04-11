@@ -9,7 +9,8 @@ class PhotoGrid extends Component {
   addImages(){
     var imgArray = [];
     for(let i = 1; i <= 20; i++){       
-      imgArray.push(<img key={i} src={require(`./images/img${i}.jpg`)}></img>);
+      imgArray.push(<img key={i} src={require(`./images/img${i}.jpg`)} style={{maxWidth: "100%",
+      height: "auto"}}></img>);
     };
     return imgArray;
   }
@@ -19,7 +20,8 @@ class PhotoGrid extends Component {
       display: "grid",
       gridColumnGap: "0.5em",
       gridTemplateColumns: "1fr 1fr 1fr 1fr",
-      marginRight: "3em"
+      marginRight: "3em",
+      marginTop : "5em"
     };
     
     return (
