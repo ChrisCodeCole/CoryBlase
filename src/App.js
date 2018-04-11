@@ -9,18 +9,20 @@ import SideBar from './components/SideBar';
 class App extends Component {
   render() {
     const AppStyle = {
-      display: "grid"
+      // display: "grid",
+      // gridTemplateColumns: "1fr 4fr"
+         
     }
     return (
-      <div className="App">
+      <div className="App" style={AppStyle} >
         <TopNavBar />
-        <div className="content-container" style={{float:"right", width:"80%"}}>
+        {/* <SideBar style={{gridColumn: "1 / 2"}}/> */}
+        <div className="content-container" style={{gridColumn: "2 / 3"}}>
           <Introduction />
           <PhotoGrid />
           <PhotoDisplay />
           <Contact />
         </div>
-        <SideBar />
       </div>
     );
   }

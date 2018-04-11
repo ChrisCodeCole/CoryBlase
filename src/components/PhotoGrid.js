@@ -18,7 +18,7 @@ class PhotoGrid extends Component {
     const GridStyle = {
       display: "grid",
       gridColumnGap: "0.5em",
-      gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr",
+      gridTemplateColumns: "1fr 1fr 1fr 1fr",
       marginRight: "3em"
     };
     

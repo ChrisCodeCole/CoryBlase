@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 
 class TopNavBar extends Component {
   render() {
+    const TopNavBarStyle = {
+      position: "fixed",
+      width: "100%"
+    }
     return (
-      <div className="SideBar">
+      <div className="TopNavBar" style={TopNavBarStyle}>
         <nav className="hide-on-med-and-down">
           <div className="nav-wrapper">
             <a href="#" className="brand-logo">CoryBlase</a>
